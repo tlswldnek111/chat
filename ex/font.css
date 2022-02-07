@@ -16,7 +16,8 @@
         font-weight: normal;
         font-style: normal;
       }
-
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
       .font-HS{
         font-family: 'HSSaemaul-Regular';
       }
@@ -25,4 +26,10 @@
       }
       .font-Ne{
         font-family: 'NeoDunggeunmo';
+      }
+      .font-Na{
+        font-family: 'Nanum Gothic Coding', monospace;
+      }
+      .font-Su{
+        font-family: 'Sunflower', sans-serif;
       }
