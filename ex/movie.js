@@ -74,5 +74,5 @@ function btn3(){
 }
 
 function btn4(){
-	location.href="https://tlswldnek111.github.io/ex";
+	location.href="https://tlswldnek111.github.io/chat/";
 }
