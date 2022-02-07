@@ -1,0 +1,10 @@
+.box{
+	width: 500px;
+	height: 400px;
+	margin: 150px auto;
+    background-color: pink;
+   border-radius:20px;
+}
+.button{
+    margin: auto;
+}
