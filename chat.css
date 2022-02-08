@@ -1,10 +1,15 @@
-.bodys{
+#bodys{
     margin:30px auto;
     width:350px;
     height:600px;
     overflow:hidden;
 }
-
+#bodys2{
+    background-color: white;
+}
+#talk{
+    color:white;
+}
 .centerbox{
     width: 350px;
     margin: auto;
@@ -23,7 +28,11 @@
     margin-left: 25%;
     margin-top: 6%;
 }
-
+#nightb{
+    border-radius: 10px 10px 0px 0px ;
+    background-color: black;
+    color:white;
+}
 
 #inputTxt{
     border:2px solid rgb(189, 188, 187);
