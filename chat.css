@@ -1,0 +1,48 @@
+.bodys{
+    margin:30px auto;
+    width:350px;
+    height:600px;
+    overflow:hidden;
+}
+
+.centerbox{
+    width: 350px;
+    margin: auto;
+    margin-top:15%;
+}
+.talkbox{
+    border: 2px solid rgb(189, 188, 187);
+    border-radius: 0px 0px 10px 10px ;
+    height: 50px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    text-align: center;
+   
+}
+.imgcenter{
+    margin-left: 25%;
+    margin-top: 6%;
+}
+
+
+#inputTxt{
+    border:2px solid rgb(189, 188, 187);
+    border-radius: 20px;
+    width: 310px;
+    font-size: 20px;
+    text-align: center;
+    margin: 5%;
+    padding: 1%;
+}
+#submitButton{
+    border:2px solid rgb(189, 188, 187);
+    border-radius: 20px;
+    background-color: rgb(189, 188, 187);
+    margin-top: 3%;
+    margin-left: 25%;
+    width: 200px;
+    height: 50px;
+}
+#submitButton:hover{
+    background-color: white;
+}
