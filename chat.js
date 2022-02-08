@@ -29,11 +29,10 @@ var check=0;
 var question="";
 var answer="";
 
-
+/*
 function text_check(){
     if(num==0){//처음 들어옴
-        console.log(num);
-    check=0;
+     
     for(i=0;i<json.length;i++){
         if(value == json[i].question){
             p[0].innerHTML=json[i].answer;
@@ -61,17 +60,58 @@ function text_check(){
         }
     }
 }
+*/
+function text_check(){
+
+    if(num==1){//말가르치기
+        if(value=="네"){
+            p[0].innerHTML="대답을 입력해 주세요";
+            num+=1;
+        }
+        else{
+            p[0].innerHTML="뀨";
+            num=0;
+        }
+        return;
+    }
+    
+    if(num==2){//json에 값 넣기
+        answer=value;
+        text_push();
+        return;
+    }
+    //json값에 있는경우
+    for(i=0;i<json.length;i++){
+        if(value == json[i].question){
+            p[0].innerHTML=json[i].answer;
+            num=0;
+            return;
+        }
+    }
+
+    //json값에 없는경우
+    
+        p[0].innerHTML= value+" 에 대한 말을 가르쳐 주실래요?(네 or 아니요)";
+        question=value;
+        num=1;
+    
+    
+
+
+}
 function text_push(){
-    if(num==3){
+    if(num==2){
     json.push({question:`${question}`,answer:`${answer}`});
     p[0].innerHTML="말을 배웠당!";
     num=0;
+    intext.value=null;
     }
 }
 
 
 function q(){
     value = document.getElementById("inputTxt").value;
+    
 for(i=0;i<play.length;i++){
 if(value.includes(play[i])){
     img_play();
@@ -121,7 +161,6 @@ function light(){
     p[0].innerHTML="낮이다냥~";
     p[0].style.color="black";
     intext.value=null;
-    num=0;
     body2.style.backgroundColor="white";
     body1.style.backgroundColor ="white";
 	btext.style.backgroundColor = "black"
@@ -137,7 +176,6 @@ function night(){
     p[0].style.color="white";
     p[1].style.color="white";
     intext.value=null;
-    num=0;
 	btext.style.backgroundColor = "white"
     btext.style.color="black";
     btext.innerHTML="라이트모드"
