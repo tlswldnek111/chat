@@ -1,0 +1,12 @@
+.box{
+	width: 500px;
+	height: 400px;
+	margin: 150px auto;
+   border-radius:20px;
+}
+.button{
+    background-color: bisque;
+    padding:20px;
+    display:block;
+    margin: auto;
+}
